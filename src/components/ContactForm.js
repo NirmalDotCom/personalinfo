@@ -47,7 +47,7 @@ export default function ContactForm({ id }) {
       <h1>Let's Get in Touch.</h1>
       <p>Discuss a project or just want to say Hi? My inbox is open for all.</p>
       <div className="contact-container">
-        <img src={cartoon} alt='Deepa Jha' className="contact-wrapper-left"></img>        
+        <img src={cartoon} alt='Nirmal Raj' className="contact-wrapper-left"></img>        
         <form ref={form} onSubmit={sendEmail} className="contact-wrapper-right">
           <input id='name' type="text" name="name" placeholder='Full Name'  required/>
           <input id='email' type="email" name="email" placeholder='Email ID' required />
