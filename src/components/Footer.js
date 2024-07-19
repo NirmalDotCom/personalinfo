@@ -7,6 +7,7 @@ export default function Footer() {
     marginRight: 7,
     marginLeft: 7
   }
+  const today = new Date();
   const year = today.getFullYear();
   return (
     <div className='footer'>
