@@ -4,7 +4,7 @@ import { CgCPlusPlus } from "react-icons/cg";
 import {DiGit} from "react-icons/di";
 import {SiVisualstudiocode, SiLaravel, SiWordpress, SiBootstrap, SiFigma, SiAdobephotoshop } from "react-icons/si";
 import {TbBrandCss3, TbBrandJavascript, TbBrandHtml5} from "react-icons/tb";
-import {IoLogoWindows, GrMysql} from "react-icons/io"
+import {IoLogoWindows, CgCPlusPlus} from "react-icons/io"
 
 export default function SkillCard({id}) {
   return (
