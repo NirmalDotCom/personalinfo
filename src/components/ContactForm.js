@@ -11,7 +11,7 @@ export default function ContactForm({ id }) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('nirmalrajkirubakaran1998', 'template_mige7pi', form.current, '-8AsG2hlNcWfgWJFj')
+    emailjs.sendForm('nirmalrajkirubakaran1998', 'service_79fpzld', form.current, '-8AsG2hlNcWfgWJFj')
       .then((result) => {
           console.log(result.text);
           toast.success('Message sent successfully.', {
