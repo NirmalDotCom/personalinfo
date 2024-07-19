@@ -4,7 +4,7 @@ import { CgCPlusPlus } from "react-icons/cg";
 import {DiGit} from "react-icons/di";
 import {SiVisualstudiocode, SiLaravel, SiWordpress, SiBootstrap, SiFigma, SiAdobephotoshop } from "react-icons/si";
 import {TbBrandCss3, TbBrandJavascript, TbBrandHtml5} from "react-icons/tb";
-import {IoLogoWindows, SiMysql} from "react-icons/io"
+import {IoLogoWindows, GrMysql} from "react-icons/io"
 
 export default function SkillCard({id}) {
   return (
@@ -24,7 +24,7 @@ export default function SkillCard({id}) {
             <div className="skillset">
               <abbr title='Laravel'><SiLaravel className='techLogo'/></abbr>
               <abbr title='Wordpress'><SiWordpress className='techLogo'/></abbr>
-              <abbr title='Mysql'><SiMysql className='techLogo'/></abbr>
+              <abbr title='Mysql'><GrMysql className='techLogo'/></abbr>
               <abbr title='CSS 3'><TbBrandCss3 className='techLogo'/></abbr>
               <abbr title='Bootstrap'><SiBootstrap className='techLogo'/></abbr>
               <abbr title='Git/Github'><DiGit className='techLogo'/></abbr>
