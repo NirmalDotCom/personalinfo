@@ -7,9 +7,12 @@ export default function Footer() {
     marginRight: 7,
     marginLeft: 7
   }
+  getYear() {
+    return new Date().getFullYear();
+}
   return (
     <div className='footer'>
-        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> 202SSSSSSSSSSSSS
+        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {this.getYear()}
     </div>
   )
 }
