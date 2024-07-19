@@ -7,9 +7,21 @@ export default function Footer() {
     marginRight: 7,
     marginLeft: 7
   }
+
+  const App = () => {
+    const getCurrentYear = () => {
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+      return currentYear;
+    };
+  const updateYear = () => {
+    const updatedYear = getCurrentYear();
+    setYear(updatedYear);
+  };
+
   return (
     <div className='footer'>
-        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> 2024
+        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
     </div>
   )
 }
