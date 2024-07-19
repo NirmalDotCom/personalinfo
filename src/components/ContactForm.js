@@ -12,7 +12,7 @@ export default function ContactForm({ id }) {
     e.preventDefault();
     setTimeout(function(){
       window.location.reload();
-   }, 5000);
+   }, 7000);
 
     emailjs.sendForm('service_79fpzld', 'template_mige7pi', form.current, '8rvCWJSv6arBnTC0o')
       .then((result) => {
