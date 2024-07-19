@@ -1,10 +1,10 @@
 import React from 'react'
 import "./SkillCardStyle.css";
-import { FaPhp } from "react-icons/cg";
+import { SiPhp } from "react-icons/cg";
 import {DiGit} from "react-icons/di";
-import {SiVisualstudiocode, FaLaravel, FaWordpress, SiBootstrap, SiFigma, DiPhotoshop } from "react-icons/si";
+import {SiVisualstudiocode, SiLaravel, SiWordpress, SiBootstrap, SiFigma, SiAdobephotoshop } from "react-icons/si";
 import {TbBrandCss3, TbBrandJavascript, TbBrandHtml5} from "react-icons/tb";
-import {IoLogoWindows, DiMysql} from "react-icons/io"
+import {IoLogoWindows, SiMysql} from "react-icons/io"
 
 export default function SkillCard({id}) {
   return (
@@ -14,7 +14,7 @@ export default function SkillCard({id}) {
           <div className="skill-box">
             <h2>Languages</h2>
             <div className="skillset">
-              <abbr title='PHP'><FaPhp className='techLogo'/></abbr>
+              <abbr title='PHP'><SiPhp className='techLogo'/></abbr>
               <abbr title='HTML 5'><TbBrandHtml5 className='techLogo'/></abbr>
               <abbr title='JavaScript'><TbBrandJavascript className='techLogo'/></abbr>
             </div>                     
@@ -22,9 +22,9 @@ export default function SkillCard({id}) {
           <div className="skill-box">
             <h2>Libraries and Frameworks</h2>
             <div className="skillset">
-              <abbr title='Laravel'><FaLaravel className='techLogo'/></abbr>
-              <abbr title='Wordpress'><FaWordpress className='techLogo'/></abbr>
-              <abbr title='Mysql'><DiMysql className='techLogo'/></abbr>
+              <abbr title='Laravel'><SiLaravel className='techLogo'/></abbr>
+              <abbr title='Wordpress'><SiWordpress className='techLogo'/></abbr>
+              <abbr title='Mysql'><SiMysql className='techLogo'/></abbr>
               <abbr title='CSS 3'><TbBrandCss3 className='techLogo'/></abbr>
               <abbr title='Bootstrap'><SiBootstrap className='techLogo'/></abbr>
               <abbr title='Git/Github'><DiGit className='techLogo'/></abbr>
@@ -36,7 +36,7 @@ export default function SkillCard({id}) {
               <abbr title='Visual Studio Code'><SiVisualstudiocode className='techLogo'/></abbr>
               <abbr title='Windows'><IoLogoWindows className='techLogo'/></abbr>
               <abbr title='Figma'><SiFigma className='techLogo'/></abbr>
-              <abbr title='Photoshop'><DiPhotoshop className='techLogo'/></abbr>
+              <abbr title='Photoshop'><SiAdobephotoshop className='techLogo'/></abbr>
             </div>            
           </div>
         </div>
