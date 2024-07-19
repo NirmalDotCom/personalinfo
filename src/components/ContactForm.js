@@ -8,11 +8,14 @@ import cartoon from '../images/cartoon-compressed.png';
 export default function ContactForm({ id }) {
   const form = useRef();
 
+  useEffect(() => {
+    setTimeout(() => {
+      ref.current.click();
+    }, 5000); //miliseconds
+  }, []);
+  
   const sendEmail = (e) => {
     e.preventDefault();
-    const interval = setInterval(() => {
-      ref.current.click();
-    }, 5000);
 
     emailjs.sendForm('service_79fpzld', 'template_mige7pi', form.current, '8rvCWJSv6arBnTC0o')
       .then((result) => {
