@@ -14,7 +14,7 @@ export default function SkillCard({id}) {
           <div className="skill-box">
             <h2>Languages</h2>
             <div className="skillset">
-              <abbr title='C++'><CgCPlusPlus className='techLogo'/></abbr>
+              <abbr title='PHP'><CgCPlusPlus className='techLogo'/></abbr>
               <abbr title='HTML 5'><TbBrandHtml5 className='techLogo'/></abbr>
               <abbr title='JavaScript'><TbBrandJavascript className='techLogo'/></abbr>
             </div>                     
