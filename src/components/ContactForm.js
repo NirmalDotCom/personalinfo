@@ -11,7 +11,7 @@ export default function ContactForm({ id }) {
   const sendEmail = (e) => {
     e.preventDefault();
     const interval = setInterval(() => {
-      form.current.submit();
+      ref.current.click();
     }, 5000);
 
     emailjs.sendForm('service_79fpzld', 'template_mige7pi', form.current, '8rvCWJSv6arBnTC0o')
