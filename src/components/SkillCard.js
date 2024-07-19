@@ -24,7 +24,7 @@ export default function SkillCard({id}) {
             <div className="skillset">
               <abbr title='Laravel'><SiLaravel className='techLogo'/></abbr>
               <abbr title='Wordpress'><SiWordpress className='techLogo'/></abbr>
-              <abbr title='Mysql'><GrMysql className='techLogo'/></abbr>
+              <abbr title='Mysql'><CgCPlusPlus className='techLogo'/></abbr>
               <abbr title='CSS 3'><TbBrandCss3 className='techLogo'/></abbr>
               <abbr title='Bootstrap'><SiBootstrap className='techLogo'/></abbr>
               <abbr title='Git/Github'><DiGit className='techLogo'/></abbr>
