@@ -1,6 +1,6 @@
 import React from 'react'
 import "./SkillCardStyle.css";
-import { SiPhp } from "react-icons/cg";
+import { SiPhp } from "react-icons/si";
 import {DiGit} from "react-icons/di";
 import {SiVisualstudiocode, SiLaravel, SiWordpress, SiBootstrap, SiFigma, SiAdobephotoshop } from "react-icons/si";
 import {TbBrandCss3, TbBrandJavascript, TbBrandHtml5} from "react-icons/tb";
