@@ -1,6 +1,6 @@
 import React from 'react'
 import "./SkillCardStyle.css";
-import { CgCPlusPlus } from "react-icons/cg";
+import { FaPhp } from "react-icons/cg";
 import {DiGit} from "react-icons/di";
 import {SiVisualstudiocode, SiLaravel, SiWordpress, SiBootstrap, SiFigma, SiAdobephotoshop } from "react-icons/si";
 import {TbBrandCss3, TbBrandJavascript, TbBrandHtml5} from "react-icons/tb";
@@ -14,7 +14,7 @@ export default function SkillCard({id}) {
           <div className="skill-box">
             <h2>Languages</h2>
             <div className="skillset">
-              <abbr title='PHP'><CgCPlusPlus className='techLogo'/></abbr>
+              <abbr title='PHP'><FaPhp className='techLogo'/></abbr>
               <abbr title='HTML 5'><TbBrandHtml5 className='techLogo'/></abbr>
               <abbr title='JavaScript'><TbBrandJavascript className='techLogo'/></abbr>
             </div>                     
