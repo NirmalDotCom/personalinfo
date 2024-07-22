@@ -7,14 +7,12 @@ export default function HomeBanner({id}) {
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
-        <div>
-          <input type="checkbox" class="checkbox" id="toggleBtn" /> </input>
+          <input type="checkbox" class="checkbox" id="toggleBtn" />
           <label class="switch" for="toggleBtn">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
             <div class="ball"></div>
           </label>
-        </div>
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
