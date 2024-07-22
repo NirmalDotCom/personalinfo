@@ -15,7 +15,7 @@ export default function HomeBanner({id}) {
             <h1>Light/Dark Toggle<br> Button</h1>
             <div>
   <input type="checkbox" class="checkbox" id="checkbox" />
-  <label for="checkbox" class="checkbox-label" />
+  <label for="checkbox" class="checkbox-label" >
     <i class="fas fa-moon"></i>
     <i class="fas fa-sun"></i>
     <span class="ball"></span>
