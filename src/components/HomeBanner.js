@@ -7,6 +7,13 @@ export default function HomeBanner({id}) {
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
+            <div class="switch">
+					<input type="radio" id="on" name="status" value="on" checked />
+					<label for="on">Light</label>
+					<input type="radio" id="off" name="status" value="off" />
+					<label for="off">Dark</label>
+					<span class="toggle-outside"><span class="toggle-inside"></span></span>
+				</div>
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
