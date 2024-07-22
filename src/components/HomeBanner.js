@@ -17,7 +17,7 @@ export default function HomeBanner({id}) {
   </label>
 </div>
 
-<div id="output" style="margin-top: 1rem"></div>
+<div id="output"></div>
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
