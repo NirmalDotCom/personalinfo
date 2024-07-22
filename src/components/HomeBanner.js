@@ -1,6 +1,8 @@
 import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
+import cartoonLight from "../images/cartoon-compressed.png"; // Light theme image
+import cartoonDark from "../images/cartoon-compressed.png"; // Dark theme image
 
 export default function HomeBanner({id}) {
   const [theme, setTheme] = useState('light'); // State for theme
