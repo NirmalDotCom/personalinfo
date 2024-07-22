@@ -12,7 +12,7 @@ export default function HomeBanner({id}) {
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
-            <h1>Light/Dark Toggle<br> Button</h1>
+            <h1>Light/Dark Toggle Button</h1>
             <div>
   <input type="checkbox" class="checkbox" id="checkbox" />
   <label for="checkbox" class="checkbox-label" >
