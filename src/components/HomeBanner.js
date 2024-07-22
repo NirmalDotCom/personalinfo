@@ -2,66 +2,41 @@ import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
-const htmlEl = document.documentElement,
-outputExample = document.getElementById('output');
-
-let savedTheme = 'light';
-
-// ********************************************************************
-//  NOTE: The localStorage example WILL NOT WORK HERE ON STACKOVERFLOW
-//        Instead it will throw a "SecurityError" and rightfully so...
-//        You'll have to use that part of the example in your
-//        own project to see it in action...... JUST FYI.
-//        So you will need to UNCOMMENT the commented out stuff for
-//        the localstorage example to work. Left it commented out for
-//        for other readers to not see the valid securityerror....
-// ********************************************************************
-
-// Toggle the theme and update their local storage.
-toggleTheme = (bool) => {
-const theme = bool ? 'light' : 'dark';
-htmlEl.dataset.theme = theme;
-// localStorage.setItem('savedTheme', theme);
-
-outputExample.innerText = `${theme} theme`;
+ // function to set a given theme/color-scheme
+ function setTheme(themeName) {
+  localStorage.setItem('theme', themeName);
+  document.documentElement.className = themeName;
 }
 
-// Handle their saved preferred theme.
-setSavedTheme = () => {
-
-// If there is no current theme in localstorage then give them one as a default.
-// Like for first time visitors...
-// Uncomment this block and the localstorage piece above for the localstorage example.
-/*
-if (localStorage.getItem('savedTheme') === null) {
-localStorage.setItem('savedTheme', savedTheme);
-} else {
-savedTheme = localStorage.getItem('savedTheme');
-}
-*/
-
-htmlEl.dataset.theme = savedTheme;
-outputExample.innerText = `${savedTheme} theme`;
+// function to toggle between light and dark theme
+function toggleTheme() {
+  if (localStorage.getItem('theme') === 'theme-dark') {
+      setTheme('theme-light');
+  } else {
+      setTheme('theme-dark');
+  }
 }
 
-// Set the default.
-setSavedTheme();
+// Immediately invoked function to set the theme on initial load
+(function () {
+  if (localStorage.getItem('theme') === 'theme-dark') {
+      setTheme('theme-dark');
+      document.getElementById('slider').checked = false;
+  } else {
+      setTheme('theme-light');
+    document.getElementById('slider').checked = true;
+  }
+})();
+
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
-            <div class="slide-toggle">
-  <input id="guidLater"
-         type="checkbox" checked
-         onchange="toggleTheme(this.checked)"/>
-  <label for="guidLater">
-    <div><i class="fas fa-sun"></i></div>
-    <div><i class="fas fa-moon"></i></div>
-  </label>
-</div>
-
-<div id="output"></div>
+            <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
