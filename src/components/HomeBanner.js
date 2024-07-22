@@ -9,7 +9,7 @@ export default function HomeBanner({id}) {
             <div className="wrapper">
             <!--==================== Dark Mode Toggle Button ====================-->
         <div>
-          <input type="checkbox" class="checkbox" id="toggleBtn" />
+          <input type="checkbox" class="checkbox" id="toggleBtn" /> </input>
           <label class="switch" for="toggleBtn">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
