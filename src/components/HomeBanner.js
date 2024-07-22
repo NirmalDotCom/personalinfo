@@ -2,44 +2,88 @@ import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
-function App() {
-  const checkboxRef = useRef(null);
+/**
+* Utility function to calculate the current theme setting.
+* Look for a local storage value.
+* Fall back to system setting.
+* Fall back to light mode.
+*/
+function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+  if (localStorageTheme !== null) {
+    return localStorageTheme;
+  }
 
-  useEffect(() => {
-    // Ensure checkboxRef.current exists before adding event listener
-    if (checkboxRef.current) {
-      checkboxRef.current.addEventListener('change', handleCheckboxChange);
-    }
+  if (systemSettingDark.matches) {
+    return "dark";
+  }
 
-    // Clean up event listener
-    return () => {
-      if (checkboxRef.current) {
-        checkboxRef.current.removeEventListener('change', handleCheckboxChange);
-      }
-    };
-  }, []); // Empty dependency array means this effect runs only once after initial render
+  return "light";
+}
 
-  const handleCheckboxChange = () => {
-    console.log('Checkbox changed:', checkboxRef.current.checked);
-    // Your logic for handling checkbox change
-  };
+/**
+* Utility function to update the button text and aria-label.
+*/
+function updateButton({ buttonEl, isDark }) {
+  const newCta = isDark ? "Change to light theme" : "Change to dark theme";
+  // use an aria-label if you are omitting text on the button
+  // and using a sun/moon icon, for example
+  buttonEl.setAttribute("aria-label", newCta);
+  buttonEl.innerText = newCta;
+}
+
+/**
+* Utility function to update the theme setting on the html tag
+*/
+function updateThemeOnHtmlEl({ theme }) {
+  document.querySelector("html").setAttribute("data-theme", theme);
+}
 
 
-  
+/**
+* On page load:
+*/
+
+/**
+* 1. Grab what we need from the DOM and system settings on page load
+*/
+const button = document.querySelector("[data-theme-toggle]");
+const localStorageTheme = localStorage.getItem("theme");
+const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+/**
+* 2. Work out the current site settings
+*/
+let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+/**
+* 3. Update the theme setting and button text accoridng to current settings
+*/
+updateButton({ buttonEl: button, isDark: currentThemeSetting === "dark" });
+updateThemeOnHtmlEl({ theme: currentThemeSetting });
+
+/**
+* 4. Add an event listener to toggle the theme
+*/
+button.addEventListener("click", (event) => {
+  const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+
+  localStorage.setItem("theme", newTheme);
+  updateButton({ buttonEl: button, isDark: newTheme === "dark" });
+  updateThemeOnHtmlEl({ theme: newTheme });
+
+  currentThemeSetting = newTheme;
+}); 
+
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
-            <h1>Light/Dark Toggle Button</h1>
-            <div>
-  <input type="checkbox" class="checkbox" id="checkbox" ref={checkboxRef} />
-  <label for="checkbox" class="checkbox-label" >
-    <i class="fas fa-moon"></i>
-    <i class="fas fa-sun"></i>
-    <span class="ball"></span>
-  </label>
-</div>
+            <button
+    type="button"
+    data-theme-toggle
+    aria-label="Change to light theme"
+  >Change to light theme</button>
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
