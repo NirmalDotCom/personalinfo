@@ -13,7 +13,7 @@ export default function HomeBanner({id}) {
         <div className='content'>
             <div className="wrapper">
             <div>
-              <input type="checkbox" class="checkbox" id="checkbox">
+              <input type="checkbox" class="checkbox" id="checkbox"> </input>
               <label for="checkbox" class="checkbox-label">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
