@@ -7,8 +7,6 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
 
-button.addEventListener("click", (event) => {
-  const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
 
   
 export default function HomeBanner({id}) {
