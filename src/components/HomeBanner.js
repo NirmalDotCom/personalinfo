@@ -2,41 +2,15 @@ import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
- // function to set a given theme/color-scheme
- function setTheme(themeName) {
-  localStorage.setItem('theme', themeName);
-  document.documentElement.className = themeName;
-}
-
-// function to toggle between light and dark theme
-function toggleTheme() {
-  if (localStorage.getItem('theme') === 'theme-dark') {
-      setTheme('theme-light');
-  } else {
-      setTheme('theme-dark');
-  }
-}
-
-// Immediately invoked function to set the theme on initial load
-(function () {
-  if (localStorage.getItem('theme') === 'theme-dark') {
-      setTheme('theme-dark');
-      document.getElementById('slider').checked = false;
-  } else {
-      setTheme('theme-light');
-    document.getElementById('slider').checked = true;
-  }
-})();
-
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
-            <label id="switch" class="switch">
-            <input type="checkbox" onchange="toggleTheme()" id="slider"> </input>
-            <span class="slider round"></span>
-        </label>
+            <div class="switch">
+	<input id="switch" class="switch__input" name="switch" type="checkbox"> </input>
+	<label class="switch__label" for="switch"></label>
+</div>
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
