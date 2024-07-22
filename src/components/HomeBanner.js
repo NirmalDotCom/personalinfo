@@ -3,7 +3,7 @@ import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
 const checkbox = document.getElementById("checkbox")
-checkbox.onChange("change", () => {
+checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
 
