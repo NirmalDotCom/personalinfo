@@ -2,13 +2,15 @@ import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
-const checkbox = document.getElementById("checkbox")
-checkbox.addEventListener("click", () => {
+const checkbox = document.getElementById("checkbox");
+checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
 
+button.addEventListener("click", (event) => {
+  const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
 
-
+  
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
