@@ -34,7 +34,7 @@ export default function HomeBanner({id}) {
         <div className='content'>
             <div className="wrapper">
             <label id="switch" class="switch">
-            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <input type="checkbox" onchange="toggleTheme()" id="slider"> </input>
             <span class="slider round"></span>
         </label>
               <div className="name">Nirmal Raj Kirubakaran</div>
