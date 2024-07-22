@@ -1,26 +1,13 @@
 import React from 'react';
-import React, { useState } from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
-import cartoonLight from "../images/cartoon-compressed.png"; // Light theme image
-import cartoonDark from "../images/cartoon-compressed.png"; // Dark theme image
 
 export default function HomeBanner({id}) {
-  const [theme, setTheme] = useState('light'); // State for theme
-
-  // Function to toggle between light and dark themes
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-  };
-
-  // Determine which image to use based on theme
-  const cartoonImage = theme === 'light' ? cartoonLight : cartoonDark;
-
   return (
-    <div className={`home ${theme}`} id={id}> 
+    <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
+              <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
                 <div className='hrLine'></div>
@@ -28,14 +15,12 @@ export default function HomeBanner({id}) {
               <ul className="dynamicTitle">
                 <li>+<span>Developer</span></li>
               </ul>
+              <a className='btn' href="https://www.linkedin.com/in/nirmal-raj-9a26b5220/" target="_blank" rel="noopener noreferrer">Hire Me</a>
             </div>
         </div>
         <div className="mask">
-            <img className='bg' src={cartoonImage} alt="girl-with-laptop" />
+            <img className='bg' src={cartoon} alt="girl-with-laptop" />
         </div>
-        <button onClick={toggleTheme} className="theme-toggle">
-          {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
-        </button>
     </div>
   )
 }
