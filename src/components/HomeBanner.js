@@ -3,10 +3,9 @@ import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
 const checkbox = document.getElementById("checkbox")
-
-document.addEventListener('change', function () {
+checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
-});
+})
 
 export default function HomeBanner({id}) {
   return (
