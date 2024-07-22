@@ -25,13 +25,18 @@ if (selectedTheme === "dark") {
   darkThemeSetUp();
 }
 
-const input = document.getElementById("toggleBtn");
+const themeButton = document.getElementById('toggleBtn');
+if (el) {
+  el.addEventListener('click', swapper, false);
+}
 
-input.addEventListener("change", () => {
-  document.body.classList.toggle(darkTheme);
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  darkThemeSetUp();
+window.addEventListener("change", (event) => {
+  const el = document.getElementById('toggleBtn');
+  if (el) {
+    el.addEventListener('click', swapper, false);
+  }
 });
+
 
 export default function HomeBanner({id}) {
   return (
