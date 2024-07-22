@@ -4,13 +4,12 @@ import cartoon from "../images/cartoon-compressed.png";
 
 const darkTheme = "dark-theme";
 
+// Add dark theme change here
 const darkThemeSetUp = () => {
   if (getCurrentTheme() === "dark") {
     document.getElementById("toggleBtn").checked = true;
-    document.getElementById("mode-text").textContent = "Dark Mode";
   } else {
     document.getElementById("toggleBtn").checked = false;
-    document.getElementById("mode-text").textContent = "Light Mode";
   }
 };
 
