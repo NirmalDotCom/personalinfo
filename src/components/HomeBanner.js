@@ -1,4 +1,5 @@
 import React from 'react';
+import React, { useState } from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 import cartoonLight from "../images/cartoon-compressed.png"; // Light theme image
