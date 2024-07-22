@@ -25,8 +25,9 @@ if (selectedTheme === "dark") {
   darkThemeSetUp();
 }
 
-const themeButton = document.getElementById("toggleBtn");
-themeButton.addEventListener("change", () => {
+const input = document.getElementById("toggleBtn");
+
+input.addEventListener("change", () => {
   document.body.classList.toggle(darkTheme);
   localStorage.setItem("selected-theme", getCurrentTheme());
   darkThemeSetUp();
