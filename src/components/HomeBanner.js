@@ -7,10 +7,6 @@ export default function HomeBanner({id}) {
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
-            <div class="switch">
-	<input id="switch" class="switch__input" name="switch" type="checkbox"> </input>
-	<label class="switch__label" for="switch"></label>
-</div>
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
