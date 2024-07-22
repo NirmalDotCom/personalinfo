@@ -7,7 +7,6 @@ export default function HomeBanner({id}) {
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
-            <!--==================== Dark Mode Toggle Button ====================-->
         <div>
           <input type="checkbox" class="checkbox" id="toggleBtn" /> </input>
           <label class="switch" for="toggleBtn">
@@ -16,7 +15,6 @@ export default function HomeBanner({id}) {
             <div class="ball"></div>
           </label>
         </div>
-        <!--==================== End====================-->
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
