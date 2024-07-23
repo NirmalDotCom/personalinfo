@@ -1,5 +1,6 @@
 import React from 'react';
 import "./FooterStyle.css";
+import myProfile from "../images/profile-image2.jpg";
 
 export default function Footer() {
   const styleSymbol = {
@@ -13,7 +14,7 @@ export default function Footer() {
     <div>
    
         <div className='footer'>
-        <img className='bg' src="./images/projectRogfree.png" alt="" />
+        <img className="img" src={myProfile} alt="Profile"></img>
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
         </div>
     </div>
