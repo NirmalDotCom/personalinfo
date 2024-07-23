@@ -83,8 +83,8 @@
     height: 80vh;
     position: absolute;
     bottom: 0;
-    right: 4;
-    z-index: -3;
+    right: 0;
+    z-index: -6;
 }
 
 @media screen and (max-width: 950px) {
