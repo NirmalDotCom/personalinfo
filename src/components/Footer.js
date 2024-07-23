@@ -1,5 +1,5 @@
 import React from 'react';
-import { playAudio, stopAudio, selectIsPlaying } from '../../store/audioSlice';
+import { playAudio, stopAudio, selectIsPlaying } from "./audioSlice.js";
 import { useSelector } from 'react-redux';
 import "./FooterStyle.css";
 import imgdvd from "../images/dvdplayer.png";
