@@ -14,7 +14,7 @@ export default function Footer() {
     <div>
    
         <div className='footer'>
-        <img className="nirmal-img rotate-disk" src={myProfile} alt="Profile" ></img>
+        <img className="nirmal-img rotate-disk" src={myProfile} alt="Profile" ></img> &nbsp;&nbsp;&nbsp;
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
         </div>
     </div>
