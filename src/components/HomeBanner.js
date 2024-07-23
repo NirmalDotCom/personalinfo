@@ -2,10 +2,12 @@ import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
-const checkbox = document.getElementById("checkbox")
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark")
-})
+
+
+const element = document.getElementById('checkbox');
+if (element) {
+  element.addEventListener('click', handleClick);
+}
 
 export default function HomeBanner({id}) {
   return (
