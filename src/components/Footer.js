@@ -43,7 +43,7 @@ export default function Footer() {
         <div className='footer'>
         <img className="nirmal-img rotate-disk" src={imgdvd} alt="Profile" ></img> &nbsp;&nbsp;
         <audio src={testaud} ></audio>
-        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
+        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year} 
         </div>
     </div>
 
