@@ -14,8 +14,9 @@ export default function Footer() {
     <div className='footer'>
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
     </div>
-    <div class="audio-btn"><img src="../images/dvdplayer.png" class="vinyl-img rotate-disk" alt="Vinyl" />
-	  <audio src="../images/ringplayer.mp3" autoplay=""></audio>
+    <div className="audio-btn">
+      <img src="../images/dvdplayer.png" class="vinyl-img rotate-disk" alt="Vinyl" />
+	    <audio src="../images/ringplayer.mp3" autoplay=""></audio>
 	  </div>
   )
 }
