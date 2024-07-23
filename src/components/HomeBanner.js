@@ -1,7 +1,13 @@
 import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
-
+document.querySelector("#switch").oninput = () => {
+	if (document.querySelector("#switch").checked == true) {
+		document.querySelector("body").classList.add("dark");
+	} else {
+		document.querySelector("body").classList.remove("dark");
+	}
+};
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
@@ -12,6 +18,10 @@ export default function HomeBanner({id}) {
                 Software
                 <div className='hrLine'></div>
               </div>
+              <div class="switch">
+	<input id="switch" class="switch__input" name="switch" type="checkbox">
+	<label class="switch__label" for="switch"></label>
+</div>
               <ul className="dynamicTitle">
                 <li>+<span>Developer</span></li>
               </ul>
