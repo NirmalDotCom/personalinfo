@@ -12,12 +12,13 @@ export default function Footer() {
   const today = new Date();
   const year = today.getFullYear();
   return (
-    <div className="mask">
-            <img className='bg' src="/" alt="nirmal-with-laptop" />
+    <div>
+    <img className='bg' src="/" alt="" />
+        <div className='footer'>
+            Made with ❤ by Nirmal <span style={styleSymbol} />
+        </div>
     </div>
-    <div className='footer'>
-        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
-    </div>
+
      
   )
 }
