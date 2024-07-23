@@ -18,8 +18,8 @@ export default function Footer() {
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
     </div>
     <div className="audio-btn">
-      <img src={imgdvd} class="vinyl-img rotate-disk" alt="Vinyl" />
-	    <audio src={audvd} autoplay=""></audio>
-	  </div>
+    <img src={imgdvd} className="vinyl-img rotate-disk" />
+    <audio src={audvd} autoplay="">
+    </div>
   )
 }
