@@ -12,8 +12,9 @@ export default function Footer() {
   const year = today.getFullYear();
   return (
     <div>
-    <img className='bg' src={cartoon} alt="" />
+   
         <div className='footer'>
+        <img className='bg' src={cartoon} alt="" />
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
         </div>
     </div>
