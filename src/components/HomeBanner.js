@@ -19,7 +19,7 @@ export default function HomeBanner({id}) {
                 <div className='hrLine'></div>
               </div>
               <div class="switch">
-	<input id="switch" class="switch__input" name="switch" type="checkbox">
+	<input id="switch" class="switch__input" name="switch" type="checkbox" />
 	<label class="switch__label" for="switch"></label>
 </div>
               <ul className="dynamicTitle">
