@@ -1,5 +1,8 @@
 import React from 'react';
 import "./FooterStyle.css";
+import imgdvd from "../images/dvdplayer.png";
+import audvd from "../images/ringplayer.mp3";
+
 
 
 export default function Footer() {
@@ -15,8 +18,8 @@ export default function Footer() {
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
     </div>
     <div className="audio-btn">
-      <img src="../images/dvdplayer.png" class="vinyl-img rotate-disk" alt="Vinyl" />
-	    <audio src="../images/ringplayer.mp3" autoplay=""></audio>
+      <img src={imgdvd} class="vinyl-img rotate-disk" alt="Vinyl" />
+	    <audio src={audvd} autoplay=""></audio>
 	  </div>
   )
 }
