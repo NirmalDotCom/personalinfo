@@ -1,6 +1,5 @@
 import React from 'react';
 import "./FooterStyle.css";
-import cartoon from "../images/cartoon-compressed.png";
 
 export default function Footer() {
   const styleSymbol = {
@@ -14,7 +13,7 @@ export default function Footer() {
     <div>
    
         <div className='footer'>
-        <img className='bg' src={cartoon} alt="" />
+        <img className='bg' src="./images/cartoon-compressed.png" alt="" />
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
         </div>
     </div>
