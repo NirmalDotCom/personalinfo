@@ -1,6 +1,6 @@
 import React from 'react';
 import "./FooterStyle.css";
-import myProfile from "../images/profile-image2.jpg";
+import myProfile from "../images/dvdplayer.png";
 
 export default function Footer() {
   const styleSymbol = {
