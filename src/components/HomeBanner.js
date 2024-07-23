@@ -10,7 +10,7 @@ export default function HomeBanner({id}) {
               <div className="name">Nirmal Raj Kirubakaran</div>
               <div className="staticTitle">
                 Software
-                
+                {/* <div className='hrLine'></div> */}
               </div>
               <ul className="dynamicTitle">
                 <li>+<span>Developer</span></li>
