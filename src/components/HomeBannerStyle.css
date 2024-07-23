@@ -83,7 +83,7 @@
     height: 80vh;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 4;
     z-index: -3;
 }
 
