@@ -1,11 +1,6 @@
 import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
-<script>
-  $(".theme-switch").on("click", () => {
-  $("body").toggleClass("light-theme");
-});</script>
-
 
 export default function HomeBanner({id}) {
   return (
@@ -17,9 +12,6 @@ export default function HomeBanner({id}) {
                 Software
                 <div className='hrLine'></div>
               </div>
-              <div class="theme-switch">
-    <div class="switch"></div>
-  </div>
               <ul className="dynamicTitle">
                 <li>+<span>Developer</span></li>
               </ul>
