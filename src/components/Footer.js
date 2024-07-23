@@ -13,7 +13,7 @@ export default function Footer() {
     <div>
    
         <div className='footer'>
-        <img className='bg' src="./images/cartoon-compressed.png" alt="" />
+        <img className='bg' src="./images/projectRogfree.png" alt="" />
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
         </div>
     </div>
