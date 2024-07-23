@@ -1,8 +1,5 @@
 import React from 'react';
 import "./FooterStyle.css";
-import cartoon from "../images/dvdplayer.png";
-import audvd from "../images/ringplayer.mp3";
-
 
 
 export default function Footer() {
@@ -17,8 +14,6 @@ export default function Footer() {
     <div className='footer'>
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
     </div>
-      <div className="mask">
-      <img className='bg' src={cartoon} alt="nirmal-with-laptop" />
-  </div>
+     
   )
 }
