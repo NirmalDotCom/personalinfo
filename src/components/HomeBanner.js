@@ -4,7 +4,7 @@ import cartoon from "../images/cartoon-compressed.png";
 
 const body = document.querySelector("body"),
       nav = document.querySelector("nav"),
-      modeToggle = document.querySelector(".dark-light"),
+      modeToggle = document.querySelector(".dark-light");
 
       let getMode = localStorage.getItem("mode");
           if(getMode && getMode === "dark-mode"){
@@ -23,6 +23,9 @@ const body = document.querySelector("body"),
             localStorage.setItem("mode" , "dark-mode");
         }
       });
+
+
+
 
 body.addEventListener("click" , e =>{
     let clickedElm = e.target;
