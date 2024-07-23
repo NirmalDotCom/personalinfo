@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <div className='footer'>
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
-        <img src={imgdvd}  />
+        <img src="image.jpg" alt="Description of the image" />
         <audio src={audvd} > </audio>
     </div>
      
