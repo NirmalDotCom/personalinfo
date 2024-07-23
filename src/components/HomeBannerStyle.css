@@ -130,14 +130,3 @@
         font-size: 16px;
     }
 }
-/* Light Theme Styles */
-.home.light {
-    background-color: #ffffff; /* Light background color */
-    color: #333333; /* Light text color */
-  }
-  
-  /* Dark Theme Styles */
-  .home.dark {
-    background-color: #1a1a1a; /* Dark background color */
-    color: #ffffff; /* Dark text color */
-  }
