@@ -14,7 +14,7 @@ export default function Footer() {
     <div>
     <img className='bg' src="/" alt="" />
         <div className='footer'>
-            Made with ❤ by Nirmal <span style={styleSymbol} />
+        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
         </div>
     </div>
 
