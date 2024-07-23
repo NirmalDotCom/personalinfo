@@ -2,7 +2,7 @@ import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 document.querySelector("#switch").oninput = () => {
-	if (document.querySelector("#switch").checked == true) {
+	if (document.querySelector("#switch").checked === true) {
 		document.querySelector("body").classList.add("dark");
 	} else {
 		document.querySelector("body").classList.remove("dark");
