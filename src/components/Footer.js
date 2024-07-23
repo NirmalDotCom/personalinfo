@@ -1,6 +1,7 @@
 import React from 'react';
 import "./FooterStyle.css";
 
+
 export default function Footer() {
   const styleSymbol = {
     fontSize: 20,
@@ -10,6 +11,9 @@ export default function Footer() {
   const today = new Date();
   const year = today.getFullYear();
   return (
+    <div class="audio-btn"><img src="../images/dvdplayer.png" class="vinyl-img rotate-disk" alt="Vinyl">
+	  <audio src="../images/ringplayer.mp3" autoplay=""></audio>
+	  </div>
     <div className='footer'>
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
     </div>
