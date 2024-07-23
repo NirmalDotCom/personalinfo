@@ -1,6 +1,5 @@
 import React from 'react';
 import "./FooterStyle.css";
-import cartoon from "../images/cartoon-compressed.png";
 
 
 export default function Footer() {
