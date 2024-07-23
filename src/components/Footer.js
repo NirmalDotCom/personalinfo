@@ -11,7 +11,7 @@ export default function Footer() {
   const today = new Date();
   const year = today.getFullYear();
   return (
-    <div class="audio-btn"><img src="../images/dvdplayer.png" class="vinyl-img rotate-disk" alt="Vinyl">
+    <div class="audio-btn"><img src="../images/dvdplayer.png" class="vinyl-img rotate-disk" alt="Vinyl" />
 	  <audio src="../images/ringplayer.mp3" autoplay=""></audio>
 	  </div>
     <div className='footer'>
