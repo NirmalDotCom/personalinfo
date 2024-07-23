@@ -93,7 +93,7 @@
     }
 
     .home .content .staticTitle {
-        font-size: 60px;
+        font-size: 90px;
     }
 
     .home .content .dynamicTitle {
@@ -118,7 +118,7 @@
     }
 
     .home .content .staticTitle .hrLine {
-        width: 22vw;
+        width: 12vw;
     }
 
     .home .content .dynamicTitle {
