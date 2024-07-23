@@ -2,13 +2,6 @@ import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
-
-
-const element = document.getElementById('checkbox');
-if (element) {
-  element.addEventListener('click', handleClick);
-}
-
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
@@ -19,14 +12,6 @@ export default function HomeBanner({id}) {
                 Software
                 <div className='hrLine'></div>
               </div>
-              <div>
-  <input type="checkbox" class="checkbox" id="checkbox" />
-  <label for="checkbox" class="checkbox-label">
-    <i class="fas fa-moon"></i>
-    <i class="fas fa-sun"></i>
-    <span class="ball"></span>
-  </label>
-</div>
               <ul className="dynamicTitle">
                 <li>+<span>Developer</span></li>
               </ul>
