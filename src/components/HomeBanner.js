@@ -19,7 +19,7 @@ export default function HomeBanner({id}) {
             </div>
         </div>
         <div className="mask">
-            <img className='bg' src={cartoon} alt="girl-with-laptop" />
+            <img className='bg' src={cartoon} alt="nirmal-with-laptop" />
         </div>
     </div>
   )
