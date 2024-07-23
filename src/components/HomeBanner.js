@@ -2,18 +2,6 @@ import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
 
-const toggle = document.querySelector(".toggle");
-const container = document.querySelector(".container");
-const sun = document.querySelector(".fa-sun");
-
-toggle.addEventListener("click", change);
-
-function change() {
-  toggle.classList.toggle("toggleel");
-  container.classList.toggle("backtel");
-  sun.classList.toggle("sun");
-}
-
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
@@ -24,12 +12,6 @@ export default function HomeBanner({id}) {
                 Software
                 <div className='hrLine'></div>
               </div>
-      <div class="card">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-      </div>
-      <div class="toggle"></div>
-
               <ul className="dynamicTitle">
                 <li>+<span>Developer</span></li>
               </ul>

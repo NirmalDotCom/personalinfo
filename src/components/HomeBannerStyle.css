@@ -130,32 +130,3 @@
         font-size: 16px;
     }
 }
-
-.toggle {
-    width: 50px;
-    height: 35px;
-    background-color: hsl(246, 25%, 77%);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-3px);
-    z-index: 999;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: transform 0.9s;
-  }
-  .fa-sun {
-    color: yellow;
-    transition: 0.6s linear;
-  }
-  .sun {
-    color: white;
-  }
-  
-  .toggleel {
-    transform: translateX(-47px);
-  }
-  
-  .backtel {
-    background-color: #292c35;
-  }
-  
