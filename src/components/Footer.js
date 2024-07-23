@@ -1,6 +1,7 @@
 import React from 'react';
 import "./FooterStyle.css";
-import myProfile from "../images/dvdplayer.png";
+import imgdvd from "../images/dvdplayer.png";
+import aud from "../images/ringplayer.mp3";
 
 export default function Footer() {
   const styleSymbol = {
@@ -14,7 +15,7 @@ export default function Footer() {
     <div>
    
         <div className='footer'>
-        <img className="nirmal-img rotate-disk" src={myProfile} alt="Profile" ></img> &nbsp;&nbsp;&nbsp;
+        <img className="nirmal-img rotate-disk" src={imgdvd} alt="Profile" ></img> &nbsp;&nbsp;
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year}
         </div>
     </div>
