@@ -1,9 +1,12 @@
 import React from 'react';
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
-$(".theme-switch").on("click", () => {
+<script>
+  $(".theme-switch").on("click", () => {
   $("body").toggleClass("light-theme");
-});
+});</script>
+
+
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
