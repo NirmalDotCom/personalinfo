@@ -24,14 +24,26 @@ export default function Footer() {
     return () => clearTimeout(stop)
   }
 
- 
+  const handleButtonClick = () => {
+    if (isPlaying) {
+      dispatch(stopAudio());
+      console.log('stopAudio: ', 'stopAudio');
+    } else {
+      dispatch(playAudio());
+      console.log('playAudio: ', 'playAudio');
+    }
+
+    stopAnimation()
+  };
+
   const today = new Date();
   const year = today.getFullYear();
   return (
     <div>
    
         <div className='footer'>
-        <img className="nirmal-img rotate-disk" src={imgdvd} alt="Profile" ></img> &nbsp;&nbsp;
+        <img src={diskImg} className={`nirmal-img ${isPlaying && "rotate-disk"}`} onClick={handleButtonClick} alt='Vinyl' />
+        {isPlaying && <audio src={audioFile} autoPlay={isPlaying} />}
         <audio src={testaud} ></audio>
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year} 
         </div>
