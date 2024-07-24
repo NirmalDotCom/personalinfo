@@ -33,17 +33,7 @@ export default function Navbar() {
         className={click ? "nav-menu active" : "nav-menu"}
         onClick={handleCLick}
       >
-        <li>
-          <Link
-          className="navLink"
-            activeClass="active"
-            to="project"
-            spy={true}
-            smooth={true}
-            duration={30}
-          >Projects</Link>
-        </li>
-        <li>
+         <li>
           <Link
           className="navLink"
             activeClass="active"
@@ -61,6 +51,16 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             duration={30}>Skills</Link>
+        </li>
+        <li>
+          <Link
+          className="navLink"
+            activeClass="active"
+            to="project"
+            spy={true}
+            smooth={true}
+            duration={30}
+          >Projects</Link>
         </li>
         <li>
           <Link
