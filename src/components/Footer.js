@@ -25,13 +25,13 @@ export default function Footer() {
   }
 
   const handleButtonClick = () => {
-    if (isPlaying) {
-      dispatch(stopAudio());
-      console.log('stopAudio: ', 'stopAudio');
-    } else {
-      dispatch(playAudio());
-      console.log('playAudio: ', 'playAudio');
-    }
+    // if (isPlaying) {
+    //   dispatch(stopAudio());
+    //   console.log('stopAudio: ', 'stopAudio');
+    // } else {
+    //   dispatch(playAudio());
+    //   console.log('playAudio: ', 'playAudio');
+    // }
 
     stopAnimation()
   };
