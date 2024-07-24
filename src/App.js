@@ -11,11 +11,11 @@ import SkillCard from './components/SkillCard'
 import ContactForm from './components/ContactForm'
 import AnimatedCursor from "react-animated-cursor"
 
+const dispatch = useDispatch();
+  const isPlaying = useSelector(selectIsPlaying);
 
 function App() {
   return (
-    const dispatch = useDispatch();
-  const isPlaying = useSelector(selectIsPlaying);
     <>
     <AnimatedCursor
       color="#fff"
