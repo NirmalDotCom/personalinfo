@@ -31,6 +31,8 @@ function App() {
     <div>
       <Navbar />
       <HomeBanner id = "home"/>
+      <AboutMe id = 'about' />
+      <SkillCard id = 'skills' />
       <ProjectCard
         id = "project"
         className = "odd"
@@ -57,8 +59,7 @@ function App() {
         deployedProjectLink="https://github.com/NirmalDotCom/personalinfo"
         projectImg={require('./images/projectRogfree.png')}
       />
-      <AboutMe id = 'about' />
-      <SkillCard id = 'skills' />
+      
       <ContactForm id = 'contact' />
       <Footer />
     </div>
