@@ -24,18 +24,7 @@ export default function Footer() {
     return () => clearTimeout(stop)
   }
 
-  // const handleButtonClick = () => {
-  //   if (isPlaying) {
-  //     dispatch(stopAudio());
-  //     console.log('stopAudio: ', 'stopAudio');
-  //   } else {
-  //     dispatch(playAudio());
-  //     console.log('playAudio: ', 'playAudio');
-  //   }
-
-  //   stopAnimation()
-  // };
-
+ 
   const today = new Date();
   const year = today.getFullYear();
   return (
