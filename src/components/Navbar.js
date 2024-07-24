@@ -41,7 +41,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             duration={30}
-          >About</Link>
+          >About Me</Link>
         </li>
         <li>
           <Link
