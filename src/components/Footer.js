@@ -17,7 +17,7 @@ export default function Footer() {
 
   const stopAnimation = () => {
     const stop = setTimeout(() => {
-      dispatch(stopAudio());
+     // dispatch(stopAudio());
       console.log('dispatch: ', 'dispatch');
     }, 184000)
 
