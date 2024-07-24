@@ -12,11 +12,11 @@ export default function AboutMe({ id }) {
           {/* Beyond coding, <span>I'm an artist at heart❤️</span> – you'll often find me lost in the world of sketches and colors. I really enjoy being creative, so I like to spend my free time drawing, sketching, and painting. It's a great way for me to unwind and tap into my creative side.
           Want to know more about me? Feel free to <a className='resume' href="https://drive.google.com/file/d/1hROCoNMpIkGQahB0E7v-OFbXlv9EHJrB/view?usp=sharing" target="_blank" rel="noopener noreferrer">explore my resume.</a> */}
         </div>
-        <div className="profile-photo">
+        {/* <div className="profile-photo">
           <div className="heading"> About Me</div>
           <img className="img" src={myProfile} alt="Profile"></img>
         </div>
-        <div className="name">Nirmal</div>
+        <div className="name">Nirmal</div> */}
       </div>
   );
 }
