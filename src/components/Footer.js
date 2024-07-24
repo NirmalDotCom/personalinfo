@@ -24,17 +24,17 @@ export default function Footer() {
     return () => clearTimeout(stop)
   }
 
-  const handleButtonClick = () => {
-    if (isPlaying) {
-      dispatch(stopAudio());
-      console.log('stopAudio: ', 'stopAudio');
-    } else {
-      dispatch(playAudio());
-      console.log('playAudio: ', 'playAudio');
-    }
+  // const handleButtonClick = () => {
+  //   if (isPlaying) {
+  //     dispatch(stopAudio());
+  //     console.log('stopAudio: ', 'stopAudio');
+  //   } else {
+  //     dispatch(playAudio());
+  //     console.log('playAudio: ', 'playAudio');
+  //   }
 
-    stopAnimation()
-  };
+  //   stopAnimation()
+  // };
 
   const today = new Date();
   const year = today.getFullYear();
