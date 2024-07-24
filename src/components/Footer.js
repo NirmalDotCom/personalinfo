@@ -1,6 +1,6 @@
 import React from 'react';
 import { playAudio, stopAudio, selectIsPlaying } from "./audioSlice.js";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "@reduxjs/toolkit";
 import "./FooterStyle.css";
 import imgdvd from "../images/dvdplayer.png";
 import testaud from "../images/ringplayer.mp3";
@@ -25,13 +25,13 @@ export default function Footer() {
   }
 
   const handleButtonClick = () => {
-    // if (isPlaying) {
-    //   dispatch(stopAudio());
-    //   console.log('stopAudio: ', 'stopAudio');
-    // } else {
-    //   dispatch(playAudio());
-    //   console.log('playAudio: ', 'playAudio');
-    // }
+    if (isPlaying) {
+      dispatch(stopAudio());
+      console.log('stopAudio: ', 'stopAudio');
+    } else {
+      dispatch(playAudio());
+      console.log('playAudio: ', 'playAudio');
+    }
 
     stopAnimation()
   };
