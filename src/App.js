@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import { playAudio, stopAudio, selectIsPlaying } from "./audioSlice.js";
+import { playAudio, stopAudio, selectIsPlaying } from "./components/audioSlice.js";
 import { useDispatch, useSelector } from "react-redux";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
