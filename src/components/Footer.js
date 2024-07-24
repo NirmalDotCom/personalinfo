@@ -13,7 +13,7 @@ export default function Footer() {
   }
 
   const isPlaying = useSelector(selectIsPlaying);
-
+  const dispatch = useDispatch();
   const stopAnimation = () => {
     const stop = setTimeout(() => {
       dispatch(stopAudio());
