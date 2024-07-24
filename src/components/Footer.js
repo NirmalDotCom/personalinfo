@@ -1,29 +1,19 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from './counterSlice'
+import "./FooterStyle.css";
 
-export function Footer() {
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
+export default function Footer() {
+  const styleSymbol = {
+    fontSize: 20,
+    marginRight: 7,
+    marginLeft: 7
+  }
+
+  const today = new Date();
+  const year = today.getFullYear();
 
   return (
-    <div>
-      <div>
-        <button
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
-          Increment
-        </button>
-        <span>{count}</span>
-        <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
-          Decrement
-        </button>
-      </div>
+    <div className='footer'>
+        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year} 
     </div>
-  );
-};
-export default Footer;
+  )
+}
