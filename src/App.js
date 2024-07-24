@@ -1,5 +1,7 @@
 import React from "react";
 import "./index.css";
+import { playAudio, stopAudio, selectIsPlaying } from "./audioSlice.js";
+import { useDispatch, useSelector } from "react-redux";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import HomeBanner from "./components/HomeBanner";
@@ -12,6 +14,8 @@ import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   return (
+    const dispatch = useDispatch();
+  const isPlaying = useSelector(selectIsPlaying);
     <>
     <AnimatedCursor
       color="#fff"
