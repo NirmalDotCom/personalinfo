@@ -42,8 +42,8 @@ export default function Footer() {
     <div>
    
         <div className='footer'>
-        <img src={diskImg} className={`nirmal-img ${isPlaying && "rotate-disk"}`} onClick={handleButtonClick} alt='Vinyl' />
-        {isPlaying && <audio src={audioFile} autoPlay={isPlaying} />}
+        <img src={imgdvd} className={`nirmal-img ${isPlaying && "rotate-disk"}`} onClick={handleButtonClick} alt='Vinyl' />
+        {isPlaying && <audio src={testaud} autoPlay={isPlaying} />}
         <audio src={testaud} ></audio>
         Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year} 
         </div>
