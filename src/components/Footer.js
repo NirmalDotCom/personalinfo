@@ -1,11 +1,18 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { playAudio, stopAudio, selectIsPlaying } from "./audioSlice.js";
-import diskImg from "../images/dvdplayer.png";
-import audioFile from "../images/ringplayer.mp3";
+import { useDispatch, useSelector } from "react-redux";
+import "./FooterStyle.css";
+import imgdvd from "../images/dvdplayer.png";
+import testaud from "../images/ringplayer.mp3";
 
-const PortfolioButton = () => {
-  const dispatch = useDispatch();
+export default function Footer() {
+  const styleSymbol = {
+    fontSize: 20,
+    marginRight: 7,
+    marginLeft: 7
+  }
+
+const dispatch = useDispatch();
   const isPlaying = useSelector(selectIsPlaying);
 
   const stopAnimation = () => {
@@ -29,34 +36,18 @@ const PortfolioButton = () => {
     stopAnimation()
   };
 
+  const today = new Date();
+  const year = today.getFullYear();
   return (
-    <div className='audio-btn'>
-      <img src={diskImg} className={`vinyl-img ${isPlaying && "rotate-disk"}`} onClick={handleButtonClick} alt='Vinyl' />
-      {isPlaying && <audio src={audioFile} autoPlay={isPlaying} />}
+    <div>
+   
+        <div className='footer'>
+        <img className="nirmal-img rotate-disk" src={imgdvd} alt="Profile" ></img> &nbsp;&nbsp;
+        <audio src={testaud} ></audio>
+        Made with ❤ by Nirmal <span style={styleSymbol}>©</span> {year} 
+        </div>
     </div>
-  );
-};
 
-export default PortfolioButton;
-
-
-
-// import audio1 from '../../assets/audio/Ring.mp3';
-// import audio2 from '../../assets/audio/Bell.mp3';
-// import audio3 from '../../assets/audio/Chime.mp3';
-
-// const audioFiles = [audio1, audio2, audio3];
-// const isPlaying = useSelector(selectIsPlaying);
-// const [audioSrc, setAudioSrc] = useState(audioFiles[0]); // Default to the first file initially
-
-// const handleButtonClick = () => {
-//   if (isPlaying) {
-//     dispatch(stopAudio());
-//   } else {
-//     const randomIndex = Math.floor(Math.random() * audioFiles.length);
-//     setAudioSrc(audioFiles[randomIndex]); // Set a new random audio source
-//     dispatch(playAudio());
-//   }
-// };
-//       <button onClick={handleButtonClick}>{isPlaying ? 'Stop Audio' : 'Play Audio'}</button>
-// {isPlaying && <audio src={audioSrc} autoPlay={isPlaying} />}
+     
+  )
+}
