@@ -12,8 +12,9 @@ export default function Footer() {
     marginLeft: 7
   }
 
-  const isPlaying = useSelector(selectIsPlaying);
   const dispatch = useDispatch();
+  const isPlaying = useSelector(selectIsPlaying);
+
   const stopAnimation = () => {
     const stop = setTimeout(() => {
       dispatch(stopAudio());
@@ -33,7 +34,7 @@ export default function Footer() {
     }
 
     stopAnimation()
-  }
+  };
 
   const today = new Date();
   const year = today.getFullYear();
