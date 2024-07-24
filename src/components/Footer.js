@@ -12,7 +12,7 @@ export default function Footer() {
     marginLeft: 7
   }
 
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const isPlaying = useSelector(selectIsPlaying);
 
   const stopAnimation = () => {
