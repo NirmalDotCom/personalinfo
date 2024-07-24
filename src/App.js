@@ -1,7 +1,5 @@
 import React from "react";
 import "./index.css";
-import { playAudio, stopAudio, selectIsPlaying } from "./components/audioSlice.js";
-import { useDispatch, useSelector } from "react-redux";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import HomeBanner from "./components/HomeBanner";
@@ -11,8 +9,6 @@ import SkillCard from './components/SkillCard'
 import ContactForm from './components/ContactForm'
 import AnimatedCursor from "react-animated-cursor"
 
-const dispatch = useDispatch();
-  const isPlaying = useSelector(selectIsPlaying);
 
 function App() {
   return (
