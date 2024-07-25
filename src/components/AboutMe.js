@@ -4,11 +4,13 @@ import myProfile from "../images/profile-image2.jpg";
 
 export default function AboutMe({ id }) {
   const [activeTab, setActiveTab] = useState("about");
-  const [activeTab1, setActiveTab] = useState("skills");
-  const [activeTab2, setActiveTab] = useState("projects");
+  const [activeTab1, setActiveTab1] = useState("skills");
+  const [activeTab2, setActiveTab2] = useState("projects");
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
+    setActiveTab1(tab);
+    setActiveTab2(tab);
   };
 
   return (
