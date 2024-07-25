@@ -128,7 +128,7 @@
     border-radius: 50%;
     filter: grayscale(100%);
     transition: 0.5s linear;
-    box-shadow: inset 0 0 0 9px rgba(225, 225, 225, 0.4);
+    box-shadow: inset 0 0 0 9px rgba(12, 207, 54, 0.4);
     animation: profile_animate 3s ease-in-out infinite 1s;
 }
 
@@ -235,7 +235,7 @@
 }
 
 @keyframes profile_animate {
-    80% {
+    0% {
       border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
     }
     50% {
