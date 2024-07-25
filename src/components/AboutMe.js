@@ -42,7 +42,7 @@ function Home() {
                     {/* <ReactParticles /> */}
                     <div className="profile">
                         <div className="front-desc">
-                            <p className="user-name-header">XXX <br /> <span className="name-highlight">{Bio.name}</span></p>
+                            <p className="user-name-header">XXX <br /> <span className="name-highlight">XXXXX</span></p>
                             <TypeWriter />
                         </div>
                         <div className={`profile-img ${confClassName}`} onClick={handleConfetti} onTouchStart={(e) => e.preventDefault()}></div>
