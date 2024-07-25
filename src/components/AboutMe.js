@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import PixelTransitionCanvas from "../customs/canvas/Canvas";
 import { Bio } from "../customs/constants";
 import TypeWriter from "../customs/type_writer/Typewriter";
-import "./Home.css";
+import "./AboutMeStyle.css";
 
 function Home() {
     const toggleMode = useSelector((state) => state.themeSlice.toggleMode);
