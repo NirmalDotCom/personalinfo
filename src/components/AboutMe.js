@@ -4,8 +4,8 @@ import myProfile from "../images/profile-image2.jpg";
 
 export default function AboutMe({ id }) {
   const [activeTab, setActiveTab] = useState("about");
-  const [activeTab, setActiveTab] = useState("skills");
-  const [activeTab, setActiveTab] = useState("projects");
+  const [activeTab1, setActiveTab] = useState("skills");
+  const [activeTab2, setActiveTab] = useState("projects");
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -27,13 +27,13 @@ export default function AboutMe({ id }) {
             About
           </button>
           <button
-            className={activeTab === "skills" ? "active" : ""}
+            className={activeTab1 === "skills" ? "active" : ""}
             onClick={() => handleTabChange("skills")}
           >
             Skills
           </button>
           <button
-            className={activeTab === "projects" ? "active" : ""}
+            className={activeTab2 === "projects" ? "active" : ""}
             onClick={() => handleTabChange("projects")}
           >
             Projects
@@ -48,7 +48,7 @@ export default function AboutMe({ id }) {
             </div>
           )}
 
-          {activeTab === "skills" && (
+          {activeTab1 === "skills" && (
             <div className="skills-content">
               <h3>Skills</h3>
               <ul>
@@ -62,7 +62,7 @@ export default function AboutMe({ id }) {
             </div>
           )}
 
-          {activeTab === "projects" && (
+          {activeTab2 === "projects" && (
             <div className="projects-content">
               <h3>Projects</h3>
               <p>List of projects...</p>
