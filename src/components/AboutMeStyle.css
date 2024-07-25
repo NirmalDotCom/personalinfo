@@ -4,6 +4,11 @@
     padding-top: 60px;
 }
 
+.profile-photo {
+    margin-left: 50px;
+    height: fit-content;
+    padding: 0;
+}
 
 .profile-photo .heading {
     font-size: 22px;
@@ -12,9 +17,13 @@
     color: #F94892;
 }
 
+.profile-photo .img {
+    width: 170%;
+    z-index: -3;
+    text-align: left;
+}
 
-
- .about-container .name {
+ /* .about-container .name {
     line-height: 85px;
     position: absolute;
     right: 6.5vw;
@@ -34,39 +43,39 @@
     background-clip: text;
     /* color: #2c2c2c; */
     color: black;
-}
+} */
 
-.about-container .aboutMe-text {
+/* .about-container .aboutMe-text {
     font-size: 18px;
     font-weight: 200;
     color: #fff;
     width: fit-content;
     position: relative;
     padding-left: 439px;
-}
+} */
 
 .aboutMe-text span {
     color: #F94892;
 }
 
-.about-container .aboutMe-text h3 {
+/* .about-container .aboutMe-text h3 {
     color: #fff;    
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 20px;
-}
+} */
 
-.about-container .aboutMe-text .resume {
+/* .about-container .aboutMe-text .resume {
     color: #F94892;
     border-bottom: 2.5px solid #F94892;
     transition: all 0.3s ease-in-out;
     display: inline-block;
     font-weight: 800;
-}
+} */
 
-.about-container .aboutMe-text .resume:hover {
+/* .about-container .aboutMe-text .resume:hover {
     transform: scale(1.05);
-}
+} */
 
 @media screen and (max-width: 1150px) {
     .about-container .aboutMe-text {
@@ -94,11 +103,11 @@
         text-align: center;
     }
 
-    .img {
+    /* .img {
         display: none;
         margin-top: 50px;
         max-width: 400px;
-    }
+    } */
 }
 
 @media screen and (max-width: 750px) {
@@ -124,7 +133,7 @@
 }
 
 .profile-img:focus {
-    outline: 0;
+    outline: 50;
 }
 
 .profile-img:before, .profile-img:after {
