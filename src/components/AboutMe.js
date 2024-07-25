@@ -1,56 +1,22 @@
-import React, { useState } from "react";
-// import ReactParticles from "../ParticleContainer/ParticlesContainer";
-import { useSelector } from "react-redux";
-import PixelTransitionCanvas from "./Canvas.js"; 
-import TypeWriter from  "./Typewriter.js";
+import React from "react";
 import "./AboutMeStyle.css";
+import myProfile from "../images/profile-image2.jpg";
 
-function Home() {
-    const toggleMode = useSelector((state) => state.themeSlice.toggleMode);
-    const [transitionActive, setTransitionActive] = useState(false);
-    const [confClassName, setConfClassName] = useState('')
-
-    // const darkGradient = "linear-gradient(to right, #fff 0%, var(--green-bg-color) 100%)";
-    // Light : Dark
-    const headerStyle = {
-        background: toggleMode ? "var(--background-color-light)" : "var(--background-color-dark)",
-        // background: toggleMode ? darkGradient : "var(--background-color-dark)",
-        color: toggleMode ? "var(--text-color-light)" : "var(--text_primary-dark)",
-        transition: "all 0.6s linear"
-    };
-
-    const handleTransitionComplete = () => {
-        setTransitionActive(false);
-    };
-
-    const handleConfetti = () => {
-        setConfClassName("animate");
-        setTimeout(function () {
-            setConfClassName("");
-        }, 700);
-    }
-
-    return (
-        <>
-            {transitionActive ? (
-                <PixelTransitionCanvas
-                    active={transitionActive}
-                    onComplete={handleTransitionComplete}
-                />
-            ) : (
-                <div className="home" style={headerStyle}>
-                    {/* <ReactParticles /> */}
-                    <div className="profile">
-                        <div className="front-desc">
-                            <p className="user-name-header">XXX <br /> <span className="name-highlight">XXXXX</span></p>
-                            <TypeWriter />
-                        </div>
-                        <div className={`profile-img ${confClassName}`} onClick={handleConfetti} onTouchStart={(e) => e.preventDefault()}></div>
-                    </div>
-                </div>
-            )}
-        </>
-    );
+export default function AboutMe({ id }) {
+  return (
+      <div className="about-container" id={id}>
+        <div className="profile-photo">
+          <div className="heading"> About Me</div>
+          <img className="profile-img" src={myProfile} alt="Profile"></img>
+        </div>
+        <div className="name">Nirmal</div>
+        {/* <div className="aboutMe-text">
+          <h3>Hey there, 👋</h3>
+          I'm <span> Nirmal </span> BCA, from Chennai, India. I build websites with a focus on responsiveness, accessibility and pleasing aesthetics. Being well versed in all the key languages allows me to rapidly design, code and deploy in an organized and efficient manner. While I specialize in <span>frontend development,</span> I'm also delving into <span>backend technologies.</span> I'm all ears for <span>new opportunities</span> to create awesome software solutions. Let's team up and cook up some digital wonders together❤️.
+          <br/> <br/> */}
+          {/* Beyond coding, <span>I'm an artist at heart❤️</span> – you'll often find me lost in the world of sketches and colors. I really enjoy being creative, so I like to spend my free time drawing, sketching, and painting. It's a great way for me to unwind and tap into my creative side.
+          Want to know more about me? Feel free to <a className='resume' href="https://drive.google.com/file/d/1hROCoNMpIkGQahB0E7v-OFbXlv9EHJrB/view?usp=sharing" target="_blank" rel="noopener noreferrer">explore my resume.</a> */}
+        {/* </div> */}
+      </div>
+  );
 }
-
-export default Home;
