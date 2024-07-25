@@ -133,7 +133,7 @@
 }
 
 .profile-img:focus {
-    outline: 50;
+    outline: 200;
 }
 
 .profile-img:before, .profile-img:after {
