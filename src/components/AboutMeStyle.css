@@ -18,8 +18,9 @@
 }
 
 .profile-photo .img {
-    width: 341%;
+    width: 170%;
     z-index: -3;
+    text-align: left;
 }
 
  .about-container .name {
