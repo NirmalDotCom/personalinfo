@@ -49,8 +49,8 @@ export default function AboutMe({ id }) {
               </div>
             </div>
             <div>
-              <span className="education_rounder" style=></span>
-              <span className="education_line" style=></span>
+              <span className="education_rounder" ></span>
+              <span className="education_line"></span>
             </div>
           </div>
         </div>
