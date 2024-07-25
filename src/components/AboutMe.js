@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import ReactParticles from "../ParticleContainer/ParticlesContainer";
 import { useSelector } from "react-redux";
-import PixelTransitionCanvas from "../customs/canvas/Canvas";
-import TypeWriter from "../customs/type_writer/Typewriter";
+import PixelTransitionCanvas from "./Canvas.js"; 
+import TypeWriter from  "./Typewriter.js";
 import "./AboutMeStyle.css";
 
 function Home() {
