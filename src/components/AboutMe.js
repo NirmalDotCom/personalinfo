@@ -16,27 +16,27 @@ export default function AboutMe({ id }) {
               <h3 className="education_title">Bachelor of Technology</h3>
               <span className="education_place">Aditya College of Engineering, Andhra Pradesh.</span>
               <div className="education_duration">
-                <FaCalendar className="about_cal" /> 2020 - 6.74 CGPA
+                 2020 - 6.74 CGPA
               </div>
             </div>
             <div>
-              <span className="education_rounder" style=></span>
-              <span className="education_line" style=></span>
+              <span className="education_rounder" ></span>
+              <span className="education_line" ></span>
             </div>
           </div>
           <div className="education_data">
             <div></div>
 
             <div>
-              <span className="education_rounder" style=></span>
-              <span className="education_line" style=></span>
+              <span className="education_rounder" ></span>
+              <span className="education_line" ></span>
             </div>
 
             <div>
               <h3 className="education_title">Diploma</h3>
               <span className="education_place">Aditya Engineering College, Andhra Pradesh.</span>
               <div className="education_duration">
-                <FaCalendar className="about_cal" /> 2016 - 74.60%
+                2016 - 74.60%
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function AboutMe({ id }) {
               <h3 className="education_title">10th Standard</h3>
               <span className="education_place">Pragati, Andhra Pradesh.</span>
               <div className="education_duration">
-                <FaCalendar className="about_cal" /> 2013 - 8.2 GPA
+                2013 - 8.2 GPA
               </div>
             </div>
             <div>
