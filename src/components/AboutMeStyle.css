@@ -130,6 +130,7 @@
     transition: 0.5s linear;
     box-shadow: inset 0 0 0 9px rgba(225, 225, 225, 0.4);
     animation: profile_animate 3s ease-in-out infinite 1s;
+    background-image: url('../images/profile-image2.jpg');
     background-size: cover;
 }
 
