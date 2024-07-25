@@ -48,9 +48,9 @@
     font-size: 18px;
     font-weight: 200;
     color: #fff;
-    height: fit-content;
+    width: fit-content;
     position: relative;
-    padding-left: 150px;
+    padding-left: 439px;
 }
 
 .aboutMe-text span {
