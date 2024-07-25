@@ -215,7 +215,7 @@
 }
 
 .name-highlight {
-    background-image: url('../../assets/images/splash-bg.jpg');
+    background-image: url('../images/splash-bg.jpg');
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
