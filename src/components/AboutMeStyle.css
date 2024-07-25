@@ -49,6 +49,7 @@
     font-weight: 200;
     color: #fff;
     height: fit-content;
+    right: 55px !important;
 }
 
 .aboutMe-text span {
