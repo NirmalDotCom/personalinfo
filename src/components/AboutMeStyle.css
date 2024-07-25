@@ -220,8 +220,8 @@
 
 @media screen and (min-width: 768px) {
     .profile-img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
     .profile-img.animate:before {
         display: block;
