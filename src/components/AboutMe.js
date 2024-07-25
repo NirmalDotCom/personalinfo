@@ -20,16 +20,16 @@ export default function AboutMe({ id }) {
               </div>
             </div>
             <div>
-              <span className="education_rounder" style={{ backgroundColor: theme.oppBgColor }}></span>
-              <span className="education_line" style={{ backgroundColor: theme.oppBgColor }}></span>
+              <span className="education_rounder" style=></span>
+              <span className="education_line" style=></span>
             </div>
           </div>
           <div className="education_data">
             <div></div>
 
             <div>
-              <span className="education_rounder" style={{ backgroundColor: theme.oppBgColor }}></span>
-              <span className="education_line" style={{ backgroundColor: theme.oppBgColor }}></span>
+              <span className="education_rounder" style=></span>
+              <span className="education_line" style=></span>
             </div>
 
             <div>
@@ -49,8 +49,8 @@ export default function AboutMe({ id }) {
               </div>
             </div>
             <div>
-              <span className="education_rounder" style={{ backgroundColor: theme.oppBgColor }}></span>
-              <span className="education_line" style={{ backgroundColor: theme.oppBgColor }}></span>
+              <span className="education_rounder" style=></span>
+              <span className="education_line" style=></span>
             </div>
           </div>
         </div>
