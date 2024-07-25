@@ -4,6 +4,8 @@ import myProfile from "../images/profile-image2.jpg";
 
 export default function AboutMe({ id }) {
   const [activeTab, setActiveTab] = useState("about");
+  const [activeTab, setActiveTab] = useState("skills");
+  const [activeTab, setActiveTab] = useState("projects");
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
