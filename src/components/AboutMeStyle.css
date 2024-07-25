@@ -160,7 +160,7 @@
     radial-gradient(circle, #21D300 20%, transparent 20%),
     radial-gradient(circle, #21D300 20%, transparent 20%),
     radial-gradient(circle, #21D300 20%, transparent 20%);
-    background-size:
+    /* background-size:
     4% 4%,
     8% 8%,
     2% 2%,
@@ -169,7 +169,7 @@
     4% 4%,
     8% 8%,
     4% 4%,
-    5% 5%;
+    5% 5%; */
 }
 
 .profile-img:after {
