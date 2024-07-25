@@ -148,51 +148,8 @@
     background-repeat: no-repeat;
 }
 
-.profile-img:before {
-    display: none;
-    top: -75%;
-    background-image: radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, transparent 20%, #21D300 20%, transparent 30%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, transparent 10%, #21D300 15%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%);
-    /* background-size:
-    4% 4%,
-    8% 8%,
-    2% 2%,
-    6% 6%,
-    2% 2%,
-    4% 4%,
-    8% 8%,
-    4% 4%,
-    5% 5%; */
-}
 
-.profile-img:after {
-    display: none;
-    bottom: -75%;
-    background-image: radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, transparent 10%, #21D300 15%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%),
-    radial-gradient(circle, #21D300 20%, transparent 20%);
-    /* background-size: 
-    4% 4%,
-    7% 7%,
-    5% 5%,
-    8% 8%,
-    4% 4%,
-    4% 4%,
-    6% 6%,
-    4% 4%,
-    5% 5%; */
-}
+
 
 .profile-img:active {
     transform: scale(0.9);
