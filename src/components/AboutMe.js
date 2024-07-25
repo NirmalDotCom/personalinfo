@@ -2,7 +2,6 @@ import React, { useState } from "react";
 // import ReactParticles from "../ParticleContainer/ParticlesContainer";
 import { useSelector } from "react-redux";
 import PixelTransitionCanvas from "../customs/canvas/Canvas";
-import { Bio } from "../customs/constants";
 import TypeWriter from "../customs/type_writer/Typewriter";
 import "./AboutMeStyle.css";
 
@@ -43,7 +42,7 @@ function Home() {
                     {/* <ReactParticles /> */}
                     <div className="profile">
                         <div className="front-desc">
-                            <p className="user-name-header">{Bio.intro} <br /> <span className="name-highlight">{Bio.name}</span></p>
+                            <p className="user-name-header">XXX <br /> <span className="name-highlight">{Bio.name}</span></p>
                             <TypeWriter />
                         </div>
                         <div className={`profile-img ${confClassName}`} onClick={handleConfetti} onTouchStart={(e) => e.preventDefault()}></div>
