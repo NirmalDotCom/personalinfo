@@ -10,50 +10,6 @@ export default function AboutMe({ id }) {
           <img className="profile-img" src={myProfile} alt="Profile"></img>
         </div>
         <div className="name">Nirmal</div>
-        <div className="education_content">
-          <div className="education_data">
-            <div>
-              <h3 className="education_title">Bachelor of Technology</h3>
-              <span className="education_place">Aditya College of Engineering, Andhra Pradesh.</span>
-              <div className="education_duration">
-                 2020 - 6.74 CGPA
-              </div>
-            </div>
-            <div>
-              <span className="education_rounder" ></span>
-              <span className="education_line" ></span>
-            </div>
-          </div>
-          <div className="education_data">
-            <div></div>
-
-            <div>
-              <span className="education_rounder" ></span>
-              <span className="education_line" ></span>
-            </div>
-
-            <div>
-              <h3 className="education_title">Diploma</h3>
-              <span className="education_place">Aditya Engineering College, Andhra Pradesh.</span>
-              <div className="education_duration">
-                2016 - 74.60%
-              </div>
-            </div>
-          </div>
-          <div className="education_data">
-            <div>
-              <h3 className="education_title">10th Standard</h3>
-              <span className="education_place">Pragati, Andhra Pradesh.</span>
-              <div className="education_duration">
-                2013 - 8.2 GPA
-              </div>
-            </div>
-            <div>
-              <span className="education_rounder" ></span>
-              <span className="education_line"></span>
-            </div>
-          </div>
-        </div>
         {/* <div className="aboutMe-text">
           <h3>Hey there, 👋</h3>
           I'm <span> Nirmal </span> BCA, from Chennai, India. I build websites with a focus on responsiveness, accessibility and pleasing aesthetics. Being well versed in all the key languages allows me to rapidly design, code and deploy in an organized and efficient manner. While I specialize in <span>frontend development,</span> I'm also delving into <span>backend technologies.</span> I'm all ears for <span>new opportunities</span> to create awesome software solutions. Let's team up and cook up some digital wonders together❤️.
