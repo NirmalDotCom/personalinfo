@@ -45,7 +45,11 @@
 }
 
 .about-container .aboutMe-text {
-    right: 55px !important;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+    height: fit-content;
+    position: right;
 }
 
 .aboutMe-text span {
