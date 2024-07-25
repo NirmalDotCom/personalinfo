@@ -4,11 +4,11 @@
     padding-top: 60px;
 }
 
-.profile-photo {
+/* .profile-photo {
     margin-left: 50px;
     height: fit-content;
     padding: 0;
-}
+} */
 
 .profile-photo .heading {
     font-size: 22px;
@@ -17,11 +17,11 @@
     color: #F94892;
 }
 
-.profile-photo .img {
+/* .profile-photo .img {
     width: 170%;
     z-index: -3;
     text-align: left;
-}
+} */
 
  .about-container .name {
     line-height: 85px;
