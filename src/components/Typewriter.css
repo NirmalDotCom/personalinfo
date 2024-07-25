@@ -1,0 +1,61 @@
+.Typewriter__wrapper {
+    font-size: var(--medium-large-text);
+    font-weight: 600 !important;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    /* color: mediumspringgreen; */
+    /* color: #fd0063; */
+
+    /* @media (min-width: 550px) {
+        font-size: 20px !important;
+    }
+
+    @media (min-width: 650px) {
+        font-size: 22px !important;
+    }
+
+    @media (orientation: portrait) and (min-width: 768px) {
+        font-size: 28px !important;
+    }
+
+    @media (orientation: portrait) and (min-width: 820px) {
+        font-size: 32px !important;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 24px !important;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 28px !important;
+    } */
+}
+
+.Typewriter__cursor {
+    font-size: var(--medium-large-text);
+
+
+    /* @media (min-width: 550px) {
+        font-size: 30px;
+    }
+
+    @media (min-width: 650px) {
+        font-size: 32px !important;
+    }
+
+    @media (orientation: portrait) and (min-width: 768px) {
+        font-size: 38px !important;
+    }
+
+    @media (orientation: portrait) and (min-width: 820px) {
+        font-size: 42px !important;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 34px !important;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 38px !important;
+    } */
+}
