@@ -1,73 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AboutMeStyle.css";
 import myProfile from "../images/profile-image2.jpg";
 
 export default function AboutMe({ id }) {
-  const [activeTab, setActiveTab] = useState("about");
-
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
-
   return (
-    <div className="about-container" id={id}>
-      <div className="profile-photo">
-        <div className="heading"> About Me</div>
-        <img className="profile-img" src={myProfile} alt="Profile" />
-      </div>
-
-      <div className="tab-container">
-        <div className="tab-buttons">
-          <button
-            className={activeTab === "about" ? "active" : ""}
-            onClick={() => handleTabChange("about")}
-          >
-            About
-          </button>
-          <button
-            className={activeTab === "skills" ? "active" : ""}
-            onClick={() => handleTabChange("skills")}
-          >
-            Skills
-          </button>
-          <button
-            className={activeTab === "projects" ? "active" : ""}
-            onClick={() => handleTabChange("projects")}
-          >
-            Projects
-          </button>
+      <div className="about-container" id={id}>
+        <div className="profile-photo">
+          <div className="heading"> About Me</div>
+          <img className="profile-img" src={myProfile} alt="Profile"></img>
         </div>
-
-        <div className="tab-content">
-          {activeTab === "about" && (
-            <div className="aboutMe-text">
-              <h3>Hey there, 👋</h3>
-              I'm <span> XXX </span> BCA, from Chennai, India. I build websites with a focus on responsiveness, accessibility and pleasing aesthetics. Being well versed in all the key languages allows me to rapidly design, code and deploy in an organized and efficient manner. While I specialize in <span>frontend development,</span> I'm also delving into <span>backend technologies.</span> I'm all ears for <span>new opportunities</span> to create awesome software solutions. Let's team up and cook up some digital wonders together❤️.
-            </div>
-          )}
-
-          {activeTab === "skills" && (
-            <div className="skills-content">
-              <h3>Skills</h3>
-              <ul>
-                <li>Frontend Development</li>
-                <li>Responsive Web Design</li>
-                <li>JavaScript (ES6+)</li>
-                <li>HTML5 & CSS3</li>
-                <li>React.js</li>
-                <li>Backend Development (Node.js, Express)</li>
-              </ul>
-            </div>
-          )}
-
-          {activeTab === "projects" && (
-            <div className="projects-content">
-              <h3>Projects</h3>
-              <p>List of projects...</p>
-            </div>
-          )}
-        </div>
+        <div className="name">Nirmal</div>
+        {/* <div className="aboutMe-text">
+          <h3>Hey there, 👋</h3>
+          I'm <span> Nirmal </span> BCA, from Chennai, India. I build websites with a focus on responsiveness, accessibility and pleasing aesthetics. Being well versed in all the key languages allows me to rapidly design, code and deploy in an organized and efficient manner. While I specialize in <span>frontend development,</span> I'm also delving into <span>backend technologies.</span> I'm all ears for <span>new opportunities</span> to create awesome software solutions. Let's team up and cook up some digital wonders together❤️.
+          <br/> <br/> */}
+          {/* Beyond coding, <span>I'm an artist at heart❤️</span> – you'll often find me lost in the world of sketches and colors. I really enjoy being creative, so I like to spend my free time drawing, sketching, and painting. It's a great way for me to unwind and tap into my creative side.
+          Want to know more about me? Feel free to <a className='resume' href="https://drive.google.com/file/d/1hROCoNMpIkGQahB0E7v-OFbXlv9EHJrB/view?usp=sharing" target="_blank" rel="noopener noreferrer">explore my resume.</a> */}
+        {/* </div> */}
       </div>
-    </div>
   );
 }
