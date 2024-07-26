@@ -29,7 +29,7 @@
     right: 77.5vw;
     padding-top: 11px;
     width: 110px;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     color: #F94892;
     text-transform: uppercase;
     z-index: 0;
