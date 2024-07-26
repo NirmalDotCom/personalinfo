@@ -9,7 +9,7 @@ export default function AboutMe({ id }) {
           <div className="heading"> </div>
           <img className="profile-img" src={myProfile} alt="Profile"></img>
         </div>
-        <div className="name">Nirm</div>
+        <div className="name">Nirmal</div>
         <div className="aboutMe-text">
           <h3>Hey there, 👋</h3>
           I'm <span> Nirmal </span> BCA, from Chennai, India. I build websites with a focus on responsiveness, accessibility and pleasing aesthetics. Being well versed in all the key languages allows me to rapidly design, code and deploy in an organized and efficient manner. While I specialize in <span>frontend development,</span> I'm also delving into <span>backend technologies.</span> I'm all ears for <span>new opportunities</span> to create awesome software solutions. Let's team up and cook up some digital wonders together❤️.
