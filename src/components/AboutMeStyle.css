@@ -51,7 +51,12 @@
     color: #fff;
     width: fit-content;
     position: relative;
+<<<<<<< HEAD
+    padding-left: 439px;
+    height: 300px;
+=======
     padding-left: 30px;
+>>>>>>> 07d257472cb888fc8aefd0191877e9d0d5a075f5
 }
 
 .aboutMe-text span {
