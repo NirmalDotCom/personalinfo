@@ -25,11 +25,11 @@
 
  .about-container .name {
     line-height: 85px;
-    /* position: absolute; */
+    position: absolute;
     right: 77.5vw;
     padding-top: 11px;
-    /* width: 110px; */
-    /* overflow-wrap: break-word; */
+    width: 110px;
+    overflow-wrap: break-word;
     color: #F94892;
     text-transform: uppercase;
     z-index: 0;
