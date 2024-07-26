@@ -24,16 +24,16 @@
 }
 
  .about-container .name {
-    line-height: 74px;
-    position: absolute;
+    line-height: 85px;
+    /* position: absolute; */
     right: 77.5vw;
     padding-top: 11px;
-    width: 110px;
-    overflow-wrap: anywhere;
+    /* width: 110px; */
+    /* overflow-wrap: break-word; */
     color: #F94892;
     text-transform: uppercase;
     z-index: 0;
-    font-size: 95px;
+    font-size: 100px;
     font-family: 'Intro', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
