@@ -211,6 +211,11 @@
         height: calc(100vh - 8vh);
     }
     .profile-img {
+        width: 300px;
+        height: 300px;
+        padding: 6px;
+    }
+    .profile-img {
         padding: 2em 4em;
         cursor: pointer;
         position: relative;
