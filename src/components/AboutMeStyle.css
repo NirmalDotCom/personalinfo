@@ -211,7 +211,9 @@
         height: calc(100vh - 8vh);
     }
     .profile-img {
-        order: 0;
+        width: 170%;
+        z-index: -3;
+        text-align: left;
     }
     .front-desc {
         width: 90%;
