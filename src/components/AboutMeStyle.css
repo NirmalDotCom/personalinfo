@@ -216,7 +216,7 @@
         padding: 6px;
     }
     .profile-img {
-        padding: 2em 4em;
+        /* padding: 2em 4em; */
         cursor: pointer;
         position: relative;
         width: 300px;
