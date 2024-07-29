@@ -6,7 +6,7 @@ export default function AboutMe({ id }) {
   return (
       <div className="about-container" id={id}>
         <div className="profile-photo">
-          <div className="heading"> </div>
+          <div className="heading">Nirmal </div>
           <img className="profile-img" src={myProfile} alt="Profile"></img>
         </div>
         <div className="name">Nirmal</div>
