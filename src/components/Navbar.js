@@ -97,7 +97,7 @@ export default function Navbar() {
           />
         </a>
         <a
-          href="https://www.instagram.com/artsydeepa/"
+          href="https://www.instagram.com/naannirmal"
           target="_blank"
           rel="noopener noreferrer"
         >
