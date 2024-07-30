@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <div className='footer'>
-        Made with 💙 by Nirmal <span style={styleSymbol}>©</span> {year} 
+        Made with💙by Nirmal <span style={styleSymbol}>©</span> {year} 
     </div>
   )
 }
