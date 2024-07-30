@@ -9,11 +9,12 @@ export default function Footer() {
   }
 
   const today = new Date();
+  const date = new Date();
   const year = today.getFullYear();
 
   return (
     <div className='footer'>
-        Made with💙by Nirmal <span style={styleSymbol}>©</span> {year} 
+        Made with💙by Nirmal <span style={styleSymbol}>©</span> {year} - { date.toLocaleString()}. 
     </div>
   )
 }
