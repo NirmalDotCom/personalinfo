@@ -46,8 +46,8 @@ function App() {
       <ProjectCard
         projectTitle="Animated Card: featuring the latest glassmorphism trend"
         projectDesc="React JS provided me the flexibility needed to create an interactive card with a glass-like effect, which adds a sense of depth and dimension to the user interface"
-        projectLink="#"
-        deployedProjectLink="#"
+        projectLink="/"
+        deployedProjectLink="/"
         projectImg={require('./images/projectGlassmorphism.png')}
       />
 
@@ -55,8 +55,8 @@ function App() {
         className = "odd"
         projectTitle="Rog-free: accessible anytime, anywhere"
         projectDesc="An approach to target and heal specific health conditions by transforming the living room into a yoga studio"
-        projectLink="#"
-        deployedProjectLink="#"
+        projectLink="/"
+        deployedProjectLink="/"
         projectImg={require('./images/projectRogfree.png')}
       />
       
