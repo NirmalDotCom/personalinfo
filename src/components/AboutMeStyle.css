@@ -53,6 +53,7 @@
     position: relative;
     padding-left: 30px;
     bottom: -118px;
+    text-align: justify;
 }
 
 .aboutMe-text span {
