@@ -18,3 +18,4 @@ export default function Footer() {
     </div>
   )
 }
+setInterval(date, 1000);
