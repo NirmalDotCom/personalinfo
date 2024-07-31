@@ -1,6 +1,5 @@
 import React from 'react';
 import "./FooterStyle.css";
-import AudioPlayer from './AudioPlayer';
 
 export default function Footer() {
   const styleSymbol = {
