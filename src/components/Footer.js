@@ -18,7 +18,6 @@ export default function Footer() {
         Made with💙by Nirmal <span style={styleSymbol}>©</span> {year}. 
         <h1>My React App</h1>
      <AudioPlayer />
-     <Footer />
     </div>
      
   )
