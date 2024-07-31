@@ -1,5 +1,6 @@
 import React from 'react';
 import "./FooterStyle.css";
+import AudioPlayer from './AudioPlayer';
 
 export default function Footer() {
   const styleSymbol = {
@@ -9,14 +10,25 @@ export default function Footer() {
   }
 
   const today = new Date();
-  const date = new Date();
   const year = today.getFullYear();
   setInterval(date, 1000);
 
 
   return (
     <div className='footer'>
-        Made with💙by Nirmal <span style={styleSymbol}>©</span> {year} - { date.toLocaleString()}. 
+        Made with💙by Nirmal <span style={styleSymbol}>©</span> {year}. 
     </div>
   )
 }
+
+function App() {
+  return (
+    <div className="App">
+      <h1>My React App</h1>
+      <AudioPlayer />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
