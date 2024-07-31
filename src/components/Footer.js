@@ -29,15 +29,14 @@ export default function Footer() {
 
 
   return (
-    <div className='footer'>
-        Made with💙by Nirmal <span style={styleSymbol}>©</span> {year}. 
+    <div>
+    <span>Made with 💙 by Nirmal</span>
+    <div className="audio-player">
+      <button onClick={togglePlayPause}>
+        {isPlaying ? 'Pause' : 'Play'}
+      </button>
     </div>
-     <div className="audio-player">
-     <button onClick={togglePlayPause}>
-       {isPlaying ? 'Pause' : 'Play'}
-     </button>
-     <audio ref={audioRef} src="../images/test_music.mp3" />
-   </div>
+  </div>
   )
 }
 
