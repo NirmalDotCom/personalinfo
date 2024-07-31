@@ -11,7 +11,6 @@ export default function Footer() {
 
   const today = new Date();
   const year = today.getFullYear();
-  setInterval(date, 1000);
 
 
   return (
